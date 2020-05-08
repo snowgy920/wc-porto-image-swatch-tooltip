@@ -18,6 +18,6 @@ function porto_child_css() {
 
 add_action( 'wp_enqueue_scripts', 'porto_child_js', 1002 );
 function porto_child_js() {
-	wp_register_script( 'porto-child-js', esc_url( get_stylesheet_directory_uri() ) . '/custom.js', array('jQuery'), '', true);
+	wp_register_script( 'porto-child-js', esc_url( get_stylesheet_directory_uri() ) . '/custom.js', array('jquery'), '', true);
 	wp_enqueue_script( 'porto-child-js' );
 }
